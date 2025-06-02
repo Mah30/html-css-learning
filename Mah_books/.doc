@@ -1,0 +1,21 @@
+ 
+ # CSS
+ Diferença entre :root e *
+
+ | Seletor | O que faz                                                                                                                                                                    |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `:root` | Seleciona **o elemento raiz**, ou seja, `<html>`. É um ponto único na árvore do documento, ideal para definir **variáveis globais**.                                         |
+| `*`     | Seleciona **todos os elementos** do documento, exceto pseudo-elementos como `::before` e `::after`. Ele serve para aplicar estilos **em massa**, não para definir variáveis. |
+
+
+Variáveis CSS
+Ao ter o primeiro contato com o arquivo css deste curso, foi criado uma variável para armazenar o valor da cor de fundo da página. Variáveis no CSS, assim como em uma linguagem de programação, permitem armazenar e atualizar valores, que podem ser utilizados em vários lugares diferentes.
+
+:root {
+    --cor-de-fundo: #EBECEE;
+}COPIAR CÓDIGO
+A motivação do seu uso é facilitar a rotina do programador: imagine que seu projeto tem uma grande quantidade de CSS e cada vez que utiliza determinada cor, você repete seu valor. Se houver a necessidade de trocar aquela cor, você teria que ir em todas as linhas que ela aparece para fazer essa mudança, mas com variáveis só é necessário alterar onde ela é criada. Outro benefício adicional é facilitar a leitura do código: –cor-de-fundo é muito mais fácil de compreender do que #EBECEE.
+
+
+O reset.css
+Ao testar tudo que foi feito, foi possível detectar algumas margens entre os elementos e os cantos da página mesmo não tendo sido declarada sua criação. Isso acontece pois os navegadores contam com uma configuração padrão de estilos e cada um tem suas particularidades.
