@@ -1,12 +1,13 @@
+
+
 :root {
     --background-page-color: #d8d9db;
+    --white: FFFFFF;
 }
 
 body {
     background-color: var(--background-page-color);
 }
 
-.logo {
-    max-height: 5px;
-    max-width: 5px;
-}
+
+
