@@ -1,3 +1,11 @@
+.header{
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
 .header-menu-hamburger{
     width: 24px;
     height: 24px;
@@ -7,31 +15,26 @@
     display: inline-block;
 }
 
-.header{
-    background-color: var(--white);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
-
 .container {
     display: flex;
     align-items: center;
 }
 
 .container-image {
-    padding: 0.5em;
+    padding: 1em;
+    /* width: 24px;
+    height: 24px; */
 }
 
 .menu-list {
     display: none;
     position: absolute;
     top: 100%;
+    width: 28vh;
 }
 
 .container-button:checked~.menu-list {
-    display: block;
+    display:block;
 }
 
 .container-button {
@@ -39,12 +42,23 @@
 }
 
 .title-menu-list, 
-.item-menu-link {
+.item-menu-list {
     padding: 1em;
     background-color: var(--white);
+    
 }
 
 .title-menu-list {
-    color: var(--orangee);
+    color: var(--orange);
     
 }
+
+.link-menu-list {
+    color: var(--blue-degrade);
+    -webkit-background-clip: text; /* Faz o fundo "aparecer" só dentro do texto (efeito máscara de recorte) */
+ /*    -webkit-text-fill-color: transparent; */
+    background-clip: text; /* Mesma coisa que -webkit-background-clip: text, mas sem o prefixo (padrão mais moderno).  --Versão compatível com Chrome/Safari
+    */
+    text-transform: uppercase;
+}
+

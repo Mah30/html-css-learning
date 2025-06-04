@@ -1,0 +1,20 @@
+
+/*   @import url("css/header.css");  */
+@import url("./css/header.css");
+@import url("./css/banner.css");
+
+
+
+:root {
+    --background-page-color: #d8d9db;
+    --white: #FFFFFF;
+    --orange: #EB9B00;
+    --blue-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+}
+
+body {
+    background-color: var(--background-page-color);
+}
+
+
+
