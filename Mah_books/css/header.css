@@ -13,6 +13,7 @@
     background-repeat: no-repeat;
     background-position: center ;
     display: inline-block;
+    cursor: pointer;
 }
 
 .container {
@@ -29,8 +30,8 @@
 .menu-list {
     display: none;
     position: absolute;
-    top: 100%;
-    width: 28vh;
+    top: 100%; /* o topo deste elemento deve estar 100% depois do cabeçalho */
+    width: 28vh;/*  significa 28% da tela que está acessando a página. */
 }
 
 .container-button:checked~.menu-list {
@@ -60,5 +61,16 @@
     background-clip: text; /* Mesma coisa que -webkit-background-clip: text, mas sem o prefixo (padrão mais moderno).  --Versão compatível com Chrome/Safari
     */
     text-transform: uppercase;
+    text-decoration: none;
+}
+
+.link-menu-list:hover{
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+.link-menu-list:active{
+    color: brown;
+    text-decoration: underline;
 }
 
